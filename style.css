@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(https://images.pexels.com/photos/2768398/pexels-photo-2768398.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-size: cover;
+}
+
+h1 {
+    font-family: "Londrina Sketch", sans-serif;
+    font-size: 3rem;
+    text-align: center;
+    color: black;
+    margin: 20px 0;
+}
+
+.container {
+    width: 800px;
+    height: 460px;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.imagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.bar {
+    background-color: blue;
+    width: 30px;
+    height: 5px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+.bar:hover {
+    background-color: rgb(255, 0, 0);
+}
+
+.navegacao {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    display: flex;
+    transform: translate(-50%);
+}
+
+input {
+    display: none;
+}
+
+.imagens {
+    display: flex;
+    height: 100%;
+    width: 700%;
+    transition: margin-left 1s ease-in-out;
+}
+
+.imagem {
+    width: 14.2857142857%; 
+}
+
+#imagens1:checked ~ .img1 {
+    margin-left: 0;
+}
+
+#imagens2:checked ~ .img1 {
+    margin-left: -14.2857142857%;
+}
+
+#imagens3:checked ~ .img1 {
+    margin-left: -28.5714285714%;
+}
+
+#imagens4:checked ~ .img1 {
+    margin-left: -42.8571428571%;
+}
+
+#imagens5:checked ~ .img1 {
+    margin-left: -57.1428571429%;
+}
+
+#imagens6:checked ~ .img1 {
+    margin-left: -71.4285714286%;
+}
+
+#imagens7:checked ~ .img1 {
+    margin-left: -85.7142857143%;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: antiquewhite;
+    text-align: center;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+}
